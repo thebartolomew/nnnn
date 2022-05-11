@@ -31,54 +31,83 @@ a{
     text-decoration: none;
 }
 .search{
+    
     display: flex;
     align-items: center;
     margin-top: 5%;
     justify-content: center;
     text-align: center;
-    background-color: #E3E3E3;
-    max-width: 270px;
-    height: 70px;
+    
+    
+    height: 50px;
     border-radius: 40px;
-    margin-left: 43%;
-    
-    
+}
+.__search{
+        max-width: 270px;
+        display: flex;
+        align-items: center;
+        background-color: #E3E3E3;
+        border-radius: 40px;
+        padding-left: 10px;
 }
 input[type="search"]::placeholder{
     font-weight: bolder;
     color: black;
     font-family: Inter;
     
+    
 }
 
 
 input[type="search"]{
     border: none;
-    padding: 26px;
+    padding: 10px 10px;
     border-radius: 40px;
     text-align: center;
-    background: url(../../shop\ +\ delivery/icons/Group\ 5.svg);
-    background-repeat: no-repeat;
-    background-position-y: 26px;
-    background-position-x: 32%;
-    background-size: 7%;
     font-weight: 700;
+    background-color: #E3E3E3;
+    text-align: start;
+}
+input[type="search"]:focus{
+    outline: none;
+}
+.navButtons{
+    display: flex;
+    justify-content: space-between;
 }
 #language{
     background: none;
-    padding: 10px;
-    border: 1px solid #C4C4C4;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#language img{
+    margin-right: 3px;
+    margin-top: 4%;
+}
+#registration{
+    background: none;
+    padding: 10px 30px;
+    border: 1px solid black;
     border-radius: 10px;
 }
-.categories{
-    max-width: 1000px;
-    margin: 5% 20%;
+.shops{
+    display: flex;
+    justify-content: center;
 }
-
+.categories{
+    margin-top: 5%;
+    align-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 ._upper{
     width: 180px;
-    background-color: #C4C4C4;
-    border-radius: 100px;
+    background-color: BLACK;
+    border-radius: 50%;
     height: 180px;
     text-align: center ;
     font-weight: 700;
@@ -99,7 +128,8 @@ input[type="search"]{
 .upperLines{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    align-content: center;
 }
 
 .lowerLines{
@@ -119,6 +149,7 @@ input[type="search"]{
 
 h2{
     margin-left: 10%;
+    margin-top: 5%;
 }
 .restaraunts{
     margin-top: 5%;
@@ -128,18 +159,22 @@ h2{
 .upperRests{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 .lowerRests{
     margin-top: 3%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .rest{
     min-width: 255px;
     min-height: 200px;
     background-color: #E1E1E1;
     border-radius: 10px;
-    
+    margin-top: 20px;
+    margin-right: 20px;
 }
 .rest h3{
     width: 255px;
@@ -156,7 +191,6 @@ h2{
 
 .moreRests{
     margin-top: 5%;
-    margin-left: 43%;
     padding: 20px;
     border-radius: 40px;
     background-color: #fff;
@@ -174,18 +208,62 @@ h2{
     width: 100%;
     height: 425px;
     background-color: #E9E9E9;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 5% 5% 0 0;
 }
 
 ._footer{
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 #logo_footer{
-    width: 100px;
-    min-height: 80px;
-    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     background-color: #D6D6D6;
+    
+}
+._logoFooter{
+    margin-left: 16.2%;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 80px;
 }
 .firstColumn, .secondColumn, .thirdColumn{
-    margin-top: 5%;
+    
+}
+._footer li{
+    margin-top: 15%;
+}
+.social_icons{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.social_icon{
+    border: 1px solid black;
+    width: 72px;
+    background-color: #C4C4C4;
+    height: 72px;
+}
+
+@media (max-width:900px) {
+    .categories{
+        font-size: 0px;
+    }
+    #language, #registration{
+        padding: 5px;
+    }
+   
+    ._upper{
+        width: 100px;
+        height: 100px;
+        font-size: 0px;
+    }
+    ._lower{
+        height: 100px;
+        width: 100px;
+    }
 }
