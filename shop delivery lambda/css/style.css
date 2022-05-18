@@ -25,8 +25,9 @@ body{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 0 0 70px 70px;
-    background-color: #fff;
-    box-shadow: 3px 3px 1px gray;
+    background-color: #FF7A00;
+    
+    
 }
 ul{
     list-style-type: none;
@@ -39,16 +40,17 @@ ul{
     display: flex;
     justify-content: space-evenly;
     font-weight: 700;
+    
 }
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
 .search{
-    
+
     display: flex;
     align-items: center;
     margin-top: 5%;
@@ -91,23 +93,28 @@ input[type="search"]:focus{
 .navButtons{
     display: flex;
     justify-content: space-between;
+    
 }
 #language{
     background: none;
     padding: 5px 15px;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 10px;
     margin-right: 10px;
+    color: white;
+    font-weight: 700;
 }
 #language img{
     margin-right: 3px;
-    margin-top: 4%;
+    margin-top: 3px;
 }
 #registration{
     background: none;
     padding: 10px 30px;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 10px;
+    color: white;
+    font-weight: 700;
 }
 .shops{
     display: flex;
@@ -123,24 +130,39 @@ input[type="search"]:focus{
 }
 ._upper{
     width: 180px;
-    background-color: BLACK;
+    background-color: #fff;
     border-radius: 50%;
     height: 180px;
     text-align: center ;
-    font-weight: 700;
+    font-weight: 400;
     
 }
 .food{
-    line-height: 300px;
+    display: flex;  
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center; 
+    
 }
+
 .markets{
-    line-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .forKids{
-    line-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .health_beauty{
-    line-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .upperLines{
     display: flex;
@@ -156,13 +178,18 @@ input[type="search"]:focus{
 
 ._lower{
     width: 180px;
-    background-color: #C4C4C4;
+    background-color: #ffffff;
     border-radius: 100px;
     height: 180px;
     text-align: center ;
-    font-weight: 700;
-    line-height: 270px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
+
 
 h2{
     margin-left: 10%;
@@ -187,32 +214,44 @@ h2{
 }
 .rest{
     min-width: 255px;
-    min-height: 200px;
-    background-color: #E1E1E1;
+    min-height: 150px;
     border-radius: 10px;
     margin-top: 20px;
     margin-right: 20px;
 }
 .rest h3{
-    width: 255px;
+    width: 305px;
     padding: 10px;
-    background-color: #D7D2D2;
-    color: black;
-    font-weight: 500;
+    background-color: #60D66A;
+    color: white;
+    font-weight: 700;
     border-radius: 0 0 10px 10px;
-    margin-top: 63%;
     text-align: center;
     font-size: medium;
     
 }
-
+.rest img{
+    margin-bottom: -5px;
+    width: 305px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+.kfc img{
+    height: 200px;
+    
+}
+.mcdonalds img{
+    height: 200px;
+}
 .moreRests{
     margin-top: 5%;
-    padding: 20px;
+    padding: 20px;  
+    color: white;
     border-radius: 40px;
-    background-color: #fff;
-    border: 2px solid black;
+    background-color: #60D66A;
     font-size: large;
+    border: none;
+    font-weight: 700;
 }
 
 .moreRests:hover{
@@ -224,10 +263,11 @@ h2{
     margin-top: 10%;
     width: 100%;
     padding-bottom: 150px;
-    background-color: #E9E9E9;
+    background-color: #FF7A00;
     display: flex;
     flex-direction: column; 
-    border-radius: 5% 5% 0 0;
+    border-radius: 320px 0 0 0;
+    color: #fff;
 }
 
 ._footer{
@@ -237,8 +277,7 @@ h2{
 #logo_footer{
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    background-color: #D6D6D6;
+    
     
 }
 ._logoFooter{
@@ -300,7 +339,11 @@ h2{
         margin-left: 10%;
     }
     .moreRests{
-        margin-left: 5%;
+        margin-left: 5%;}
+
+    .sim-slider{
+        display: none;
+    }    
 }
 
 .rests_{
@@ -356,4 +399,185 @@ h2{
 
 ._more{
     padding: 10px 80px;
+}
+.intro{
+    margin: 7% 5%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 1.5px;
+    flex-wrap: wrap;
+}
+#_fastDelivery_{
+    margin: 0;
+}
+
+.width-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.assortiment-block{
+    max-width: 255px;
+    min-height: 200px;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.screenRestaraunts{
+    display: flex;
+}
+#title-assortiment{
+    margin-left: 2%;
+}
+
+#_mainScreenbtn{
+    background: none;
+    border: 0;
+}
+#_mainScreenbtn:hover{
+    cursor: pointer;
+}
+.__moreButton{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.delivery-title{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.sim-slider img {
+    width: 100%;
+  }
+  
+  .sim-slider {
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border: 1px solid #ccd;
+    background-color: white;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.sssssssas{
+    margin-top: 5%;
+    display: flex;
+}
+
+#__fastestDelivery{
+    max-width: 200px;
+    min-height: 100px;
+    border-radius: 100px;
+    background-color: #C4C4C4;
+}
+
+._upper_{
+    width: 180px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    height: 180px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.upperLines_{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.__categories{
+    margin-top: 15%;
+    align-content: center;
+}
+
+._upper_ h3{
+    margin-top: 100%;
 }
