@@ -7,7 +7,7 @@
     font-family: Inter, sans-serif;
 }
 body{
-    background-color: #F3F3F3;
+    background-color: #FFF5DD;
 }
 .burgerBtn{
     display: none;
@@ -401,17 +401,20 @@ h2{
     padding: 10px 80px;
 }
 .intro{
-    margin: 7% 5%;
+    margin: 3% 5%;
     font-size: 30px;
     display: flex;
     justify-content: space-evenly;
     letter-spacing: 1.5px;
     flex-wrap: wrap;
 }
-#_fastDelivery_{
-    margin: 0;
-}
 
+#_fastDelivery{
+    margin-top: 35%;
+}
+#_fastDelivery_{
+    margin-top: 5%;
+}
 .width-title{
     width: 100%;
     display: flex;
@@ -558,11 +561,14 @@ h2{
 
 ._upper_{
     width: 180px;
-    background-color: #C4C4C4;
-    border-radius: 50%;
     height: 180px;
     text-align: center;
     font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .upperLines_{
@@ -574,10 +580,25 @@ h2{
 }
 
 .__categories{
-    margin-top: 15%;
+    margin-top: 10%;
     align-content: center;
 }
 
-._upper_ h3{
-    margin-top: 100%;
+.item{
+    display: none;
+}
+.image1{
+    display: none;
+    
+}
+.image2{
+    display: flex;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.item img{
+   width: 100%;
 }
