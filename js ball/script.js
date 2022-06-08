@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 var ballRadius = 18;
 var x = canvas.width;
 var y = canvas.height;
-var dx = Math.floor(Math.random() * 20) + 1;
+var dx = ((Math.random() < 0.5) ? -1 : 1)*Math.floor(Math.random() * 20) + 1;
 var dy = Math.floor(Math.random() * 10) + 1;
 var paddleHeight = 20;
 var paddleWidth = 155;
@@ -143,7 +143,7 @@ function draw() {
       else {
         x = canvas.width/2;
         y = canvas.height-30;
-        dx = Math.floor(Math.random() * 20) + 1;
+        dx = ((Math.random() < 0.5) ? -1 : 1)*Math.floor(Math.random() * 20) + 1;
         dy = Math.floor(Math.random() * 10) + 1;
         paddleX = (canvas.width-paddleWidth)/2;
       }
